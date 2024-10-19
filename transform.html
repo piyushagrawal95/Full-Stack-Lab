@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        div div{
+            height: 100px;
+            width: 100px;
+            background-color: paleturquoise;
+            margin: 20px;
+            border: 1px solid black ;
+        }
+
+        .A:hover{
+            /*rotate: 40deg;*/
+            transform: rotate3d(0,1,0,45deg);
+
+        }
+        .B:hover{
+            transform: rotateY(45deg);
+
+
+        }
+        .C:hover{
+            transform: scaleY(10);
+
+        }
+        .D:hover{
+            transform: translate(400px);
+
+        }
+        p:hover{
+            /*transform: scale(2);*/
+            font-size: 50px;
+            transition-duration: 500ms;
+        }
+
+    </style>
+</head>
+<body >
+<div style="display: flex; align-items: center;">
+    <div class="A"></div>
+    <div class="B"></div>
+    <div class="C"></div>
+    <div class="D"></div>
+    <p>
+        hello worldd
+    </p>
+
+</div>
+
+
+
+</body>
+</html>
