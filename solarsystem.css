@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+.orbit{
+    border: 2px solid black;
+    height: 300px;
+    width:300px;
+    animation-name: solar;
+    animation-duration:4s ;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.planet{
+    border: 2px solid red;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    position: relative;
+    top:35px;
+}
+.sun{
+    border: 2px solib red;
+    background-image: linear-gradient(to left,rgb(255,136,0),rgb(255,30,0),rgb(98, 98, 225));
+    height: 100px;
+    width:100px;
+    position: fixed;
+    left: 100px;
+    top: 50px;
+    border-radius: 50%;
+}@keyframes solar{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
